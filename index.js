@@ -9,6 +9,9 @@ app.listen(port,(req)=>{
 app.set("view engine","ejs");
 app.use(express.static("public"));
 
+app.get("/",(req,res)=>{
+   res.render("index.ejs");
+});
 app.get("/news",(req,res)=>{
    res.render("index.ejs");
 });
