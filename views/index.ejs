@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24x7 NEWS PORTAL</title>
+    <link rel="stylesheet" href="/Style.css">
+</head>
+<body>
+
+  <div id="intro">
+     Welcome to My Website
+    <div class="changing-text" id="changingText">Loading...</div>
+  </div>
+  
+  <h1 id="head">Latest News Headlines </h1>
+  <h4 id="date"><%= Date(); %></h4>
+  <div class="controls">
+    <label for="country" style="color: aliceblue; font-weight: 900;">Country:</label>
+    <select id="country">
+      <option value="us">USA</option>
+      <option value="gb">UK</option>
+      <option value="in">India</option>
+      <option value="au">Australia</option>
+      <option value="ca">Canada</option>
+    </select>
+<br>
+<br>
+    <label for="category"  style="color: aliceblue; font-weight: 900;">Category:</label>
+    <select id="category">
+      <option value="sports">Sports</option>
+      <option value="technology">Technology</option>
+      <option value="business">Business</option>
+      <option value="health">Health</option>
+      <option value="science">Science</option>
+    </select>
+
+    <button onclick="fetchNews()">Get News</button>
+  </div>
+  
+  <div class="news-container" id="news-container"></div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
