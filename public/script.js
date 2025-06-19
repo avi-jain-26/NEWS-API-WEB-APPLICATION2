@@ -40,7 +40,7 @@ fetch(url)
       const card = document.createElement("div");
       card.className = "news-card";
       card.innerHTML = `
-        <img src="${article.image_url || 'https://via.placeholder.com/300x180'}" alt="News Image"/>
+        <img src="${article.image_url || 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'}" alt="News Image"/>
         <h3>${article.title}</h3>
         <a href="${article.link}" target="_blank">Read More</a>`;
       container.appendChild(card);
